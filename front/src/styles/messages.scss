@@ -1,0 +1,23 @@
+.messages-column {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__nickname {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+}

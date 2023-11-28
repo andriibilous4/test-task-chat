@@ -1,0 +1,1 @@
+export const removeQuotes = (word) => word.replace(/^"|"$/g, '');

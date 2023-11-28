@@ -1,0 +1,58 @@
+.message-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &__nickname,
+  &__text {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 0;
+
+    &:focus {
+      border-color: blue;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(blue, 0.3);
+    }
+
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+
+  .submit-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(blue, 10%);
+    }
+
+    &:active {
+      background-color: darken(blue, 20%);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px lighten(blue, 40%);
+    }
+
+    &:disabled {
+      background-color: lighten(blue, 30%);
+      cursor: not-allowed;
+    }
+  }
+}
